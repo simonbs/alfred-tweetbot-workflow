@@ -3,7 +3,7 @@ Tweetbot Workflow for Alfred 2.0
 
 A workflow for Alfred 2.0 which lets the user control Tweetbot.
 
-![](http://c.4su.re/M9w7/alfred-tweetbot-workflow.png)
+![](http://f.cl.ly/items/010S1v0F091z300H1U3j/alfred-tweetbot-workflow.png)
 
 The workflow is written in Python and uses the [Tweetbot URL scheme](http://tapbots.com/blog/development/tweetbot-url-scheme).
 
