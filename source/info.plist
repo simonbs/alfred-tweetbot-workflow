@@ -6,121 +6,11 @@
 	<string>dk.simonbs.Alfred.Tweetbot</string>
 	<key>connections</key>
 	<dict>
-		<key>26165D10-E529-4ED4-97F9-6E5226B8726D</key>
+		<key>D5ED849F-23DC-44D7-A290-AA4410E9A471</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>DCD908AE-C629-45B3-980A-D6CC2046C296</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>40279546-EDCD-4CB3-8B58-026C232D28BB</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>05866C0E-4A9B-437A-AC7E-64823F61A2FA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>6FA25EFF-B150-424A-98AE-86A56B59335B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1139BFA3-BF46-4BB4-BA54-987D14516939</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>7BF1AEFA-62F0-44F4-AC49-82DC3F37C812</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>05034300-B5C8-47B5-B8BC-EAD4F7B6BBCE</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>B2D59A7A-438D-424C-82E7-A1129CAA0A19</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>69D860B8-7EA7-45E5-BCB1-8EBEDF123F4B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>C82F2FD5-E6E7-4A71-9683-F50E519B5017</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A6F35709-64AB-4FCC-9111-8F0735F27CE3</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>D42800B4-F089-4F9F-9E0B-2AD6E06EDF47</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5D1535FC-2448-4D10-B281-4C2CCA9BCF3E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>D894AF73-CC2A-4BAB-B014-3F619F953A86</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>419D554F-85D2-40EB-9498-605E6171418E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>F13E0746-ED7A-4EDD-8302-1853957FE786</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B980815E-5A0C-4E7F-AF90-BD0A8DD5E0AA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>F63CECEE-5A24-4606-AACC-1F70A70F3A0F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>03AE4FBA-D216-4148-B546-5C33DE5254B4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>FA44C4A2-95C1-4296-ADE2-9131680360AD</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1890E808-4B5F-49E8-916F-15195E0A8FDA</string>
+				<string>2F87A25F-96C5-4EC4-ADC3-27C5D3A84151</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -139,505 +29,57 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>tun</string>
-				<key>text</key>
-				<string>Unfollow '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>D894AF73-CC2A-4BAB-B014-3F619F953A86</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>from tweetbot import show_direct_messages
+				<string>from tweetbot_helper import run_command
 
-show_direct_messages("{query}")</string>
+run_command("{query}")</string>
 				<key>type</key>
 				<integer>3</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.output.script</string>
 			<key>uid</key>
-			<string>DCD908AE-C629-45B3-980A-D6CC2046C296</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>from tweetbot import show_retweets
-
-show_retweets("{query}")</string>
-				<key>type</key>
-				<integer>3</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>B980815E-5A0C-4E7F-AF90-BD0A8DD5E0AA</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>tfo</string>
-				<key>text</key>
-				<string>Follow '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>B2D59A7A-438D-424C-82E7-A1129CAA0A19</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>from tweetbot import follow_user
-
-follow_user("{query}")</string>
-				<key>type</key>
-				<integer>3</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>69D860B8-7EA7-45E5-BCB1-8EBEDF123F4B</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>from tweetbot import show_lists
-
-show_lists("{query}")</string>
-				<key>type</key>
-				<integer>3</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>5D1535FC-2448-4D10-B281-4C2CCA9BCF3E</string>
+			<string>2F87A25F-96C5-4EC4-ADC3-27C5D3A84151</string>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
-				<key>keyword</key>
-				<string>tl</string>
-				<key>subtext</key>
-				<string>Show your lists</string>
-				<key>text</key>
-				<string>Lists</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>D42800B4-F089-4F9F-9E0B-2AD6E06EDF47</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>tf</string>
-				<key>subtext</key>
-				<string>Show your favorites</string>
-				<key>text</key>
-				<string>Favorites</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>C82F2FD5-E6E7-4A71-9683-F50E519B5017</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>escaping</key>
 				<integer>0</integer>
+				<key>keyword</key>
+				<string>tb</string>
 				<key>script</key>
-				<string>from tweetbot import show_timeline
+				<string>from tweetbot_helper import tweetbot_helper
 
-show_timeline("{query}")</string>
+print(tweetbot_helper("{query}"))</string>
+				<key>title</key>
+				<string>Tweetbot</string>
 				<key>type</key>
 				<integer>3</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>1890E808-4B5F-49E8-916F-15195E0A8FDA</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>tdm</string>
-				<key>subtext</key>
-				<string>Show your direct messages</string>
-				<key>text</key>
-				<string>Direct Messages</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>26165D10-E529-4ED4-97F9-6E5226B8726D</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>from tweetbot import show_mentions
-
-show_mentions("{query}")</string>
-				<key>type</key>
-				<integer>3</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>05866C0E-4A9B-437A-AC7E-64823F61A2FA</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>from tweetbot import post_tweet
-
-post_tweet("{query}")</string>
-				<key>type</key>
-				<integer>3</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>03AE4FBA-D216-4148-B546-5C33DE5254B4</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>tmm</string>
-				<key>subtext</key>
-				<string>Show your mentions</string>
-				<key>text</key>
-				<string>Mentions</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>40279546-EDCD-4CB3-8B58-026C232D28BB</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>tt</string>
-				<key>subtext</key>
-				<string>Show your timeline</string>
-				<key>text</key>
-				<string>Timeline</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>FA44C4A2-95C1-4296-ADE2-9131680360AD</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>from tweetbot import show_search
-
-show_search("{query}")</string>
-				<key>type</key>
-				<integer>3</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>05034300-B5C8-47B5-B8BC-EAD4F7B6BBCE</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>from tweetbot import unfollow_user
-
-unfollow_user("{query}")</string>
-				<key>type</key>
-				<integer>3</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>419D554F-85D2-40EB-9498-605E6171418E</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>ts</string>
-				<key>text</key>
-				<string>Show search</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>7BF1AEFA-62F0-44F4-AC49-82DC3F37C812</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>t</string>
-				<key>subtext</key>
-				<string>Post a new tweet</string>
-				<key>text</key>
-				<string>New Tweet</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>F63CECEE-5A24-4606-AACC-1F70A70F3A0F</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>tr</string>
-				<key>subtext</key>
-				<string>Show your retweets</string>
-				<key>text</key>
-				<string>Retweets</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>F13E0746-ED7A-4EDD-8302-1853957FE786</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>from tweetbot import show_user_profile
-
-show_user_profile("{query}")</string>
-				<key>type</key>
-				<integer>3</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>1139BFA3-BF46-4BB4-BA54-987D14516939</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>from tweetbot import show_favorites
-
-show_favorites("{query}")</string>
-				<key>type</key>
-				<integer>3</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A6F35709-64AB-4FCC-9111-8F0735F27CE3</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>tu</string>
-				<key>subtext</key>
-				<string>Go to user profile</string>
-				<key>text</key>
-				<string>Show user profile for user '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>6FA25EFF-B150-424A-98AE-86A56B59335B</string>
+			<string>D5ED849F-23DC-44D7-A290-AA4410E9A471</string>
 		</dict>
 	</array>
 	<key>uidata</key>
 	<dict>
-		<key>03AE4FBA-D216-4148-B546-5C33DE5254B4</key>
+		<key>2F87A25F-96C5-4EC4-ADC3-27C5D3A84151</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
-		<key>05034300-B5C8-47B5-B8BC-EAD4F7B6BBCE</key>
-		<dict>
-			<key>ypos</key>
-			<real>970</real>
-		</dict>
-		<key>05866C0E-4A9B-437A-AC7E-64823F61A2FA</key>
-		<dict>
-			<key>ypos</key>
-			<real>370</real>
-		</dict>
-		<key>1139BFA3-BF46-4BB4-BA54-987D14516939</key>
-		<dict>
-			<key>ypos</key>
-			<real>250</real>
-		</dict>
-		<key>1890E808-4B5F-49E8-916F-15195E0A8FDA</key>
-		<dict>
-			<key>ypos</key>
-			<real>130</real>
-		</dict>
-		<key>26165D10-E529-4ED4-97F9-6E5226B8726D</key>
-		<dict>
-			<key>ypos</key>
-			<real>610</real>
-		</dict>
-		<key>40279546-EDCD-4CB3-8B58-026C232D28BB</key>
-		<dict>
-			<key>ypos</key>
-			<real>370</real>
-		</dict>
-		<key>419D554F-85D2-40EB-9498-605E6171418E</key>
-		<dict>
-			<key>ypos</key>
-			<real>1210</real>
-		</dict>
-		<key>5D1535FC-2448-4D10-B281-4C2CCA9BCF3E</key>
-		<dict>
-			<key>ypos</key>
-			<real>730</real>
-		</dict>
-		<key>69D860B8-7EA7-45E5-BCB1-8EBEDF123F4B</key>
-		<dict>
-			<key>ypos</key>
-			<real>1090</real>
-		</dict>
-		<key>6FA25EFF-B150-424A-98AE-86A56B59335B</key>
-		<dict>
-			<key>ypos</key>
-			<real>250</real>
-		</dict>
-		<key>7BF1AEFA-62F0-44F4-AC49-82DC3F37C812</key>
-		<dict>
-			<key>ypos</key>
-			<real>970</real>
-		</dict>
-		<key>A6F35709-64AB-4FCC-9111-8F0735F27CE3</key>
-		<dict>
-			<key>ypos</key>
-			<real>850</real>
-		</dict>
-		<key>B2D59A7A-438D-424C-82E7-A1129CAA0A19</key>
-		<dict>
-			<key>ypos</key>
-			<real>1090</real>
-		</dict>
-		<key>B980815E-5A0C-4E7F-AF90-BD0A8DD5E0AA</key>
-		<dict>
-			<key>ypos</key>
-			<real>490</real>
-		</dict>
-		<key>C82F2FD5-E6E7-4A71-9683-F50E519B5017</key>
-		<dict>
-			<key>ypos</key>
-			<real>850</real>
-		</dict>
-		<key>D42800B4-F089-4F9F-9E0B-2AD6E06EDF47</key>
-		<dict>
-			<key>ypos</key>
-			<real>730</real>
-		</dict>
-		<key>D894AF73-CC2A-4BAB-B014-3F619F953A86</key>
-		<dict>
-			<key>ypos</key>
-			<real>1210</real>
-		</dict>
-		<key>DCD908AE-C629-45B3-980A-D6CC2046C296</key>
-		<dict>
-			<key>ypos</key>
-			<real>610</real>
-		</dict>
-		<key>F13E0746-ED7A-4EDD-8302-1853957FE786</key>
-		<dict>
-			<key>ypos</key>
-			<real>490</real>
-		</dict>
-		<key>F63CECEE-5A24-4606-AACC-1F70A70F3A0F</key>
+		<key>D5ED849F-23DC-44D7-A290-AA4410E9A471</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
-		</dict>
-		<key>FA44C4A2-95C1-4296-ADE2-9131680360AD</key>
-		<dict>
-			<key>ypos</key>
-			<real>130</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
